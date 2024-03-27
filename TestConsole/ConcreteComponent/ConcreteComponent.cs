@@ -1,9 +1,11 @@
-public class PlainDecorator : Decorator<string>
-{
-    public PlainDecorator(IComponent<string> component) : base(component) { }
+using TestConsole.Interface;
+using TestConsole.Decorator;
 
-    public override string GetText()
+namespace TestConsole.ConcreteComponent{
+public class ConcreteComponent : IComponent<string>
+{
+    public string GetText()
     {
-        return "Plain: " + base.GetText();
+        return "Hello, This is the first assignment of the Modular Development";
     }
-}
+}}

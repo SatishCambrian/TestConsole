@@ -1,3 +1,7 @@
+using TestConsole.Interface;
+
+
+namespace TestConsole.Decorator{
 public abstract class Decorator<T> : IComponent<T>
 {
     protected IComponent<T> component;
@@ -11,4 +15,6 @@ public abstract class Decorator<T> : IComponent<T>
     {
         return component.GetText();
     }
+}
+
 }
